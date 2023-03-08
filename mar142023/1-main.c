@@ -25,7 +25,7 @@ int main(void)
 	n = print_list(head);
 	printf("-> %lu elements\n", n);
 
-	add_node_location(&head, "Holberton", 1);
+	add_node_location(&head, "Holberton", 2);
 	n = print_list(head);
 	printf("-> %lu elements\n", n);
 */
