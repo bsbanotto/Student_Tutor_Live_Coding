@@ -8,26 +8,30 @@
 int main(void)
 {
 	list_t *head;
-	list_t Welcome = {"Welcome", 25, NULL};
-	list_t to = {"to", 25, NULL};
-	list_t THUNDERDOME = {"THUNDERDOME!!", 25, NULL};
+	list_t My = {"My", 25, NULL};
+	list_t favorite = {"favorite", 25, NULL};
+	list_t AXOLOTL = {"AXOLOTL!!", 25, NULL};
 	size_t n;
 
-	head = &Welcome;
-	head->next = &to;
-	head->next->next = &THUNDERDOME;
+	head = &My;
+	head->next = &favorite;
+	head->next->next = &AXOLOTL;
 
 	n = print_list(head);
-	printf("-> %lu elements\n", n);
+	printf("\t-> %lu elements\n", n);
 
 /*
-	add_node_location(&head, "Tulsa", 1);
+	add_node_location(&head, "animal", 1);
 	n = print_list(head);
-	printf("-> %lu elements\n", n);
+	printf("\t-> %lu elements\n", n);
 
-	add_node_location(&head, "Holberton", 2);
+	add_node_location(&head, "the", 2);
 	n = print_list(head);
-	printf("-> %lu elements\n", n);
+	printf("\t-> %lu elements\n", n);
+
+	add_node_location(&head, "is", 2);
+	n = print_list(head);
+	printf("\t-> %lu elements\n", n);
 */
 
 	return (0);
