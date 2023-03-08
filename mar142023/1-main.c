@@ -9,8 +9,8 @@ int main(void)
 {
 	list_t *head;
 	list_t Welcome = {"Welcome", 25, NULL};
-	list_t THUNDERDOME = {"THUNDERDOME!!", 25, NULL};
 	list_t to = {"to", 25, NULL};
+	list_t THUNDERDOME = {"THUNDERDOME!!", 25, NULL};
 	size_t n;
 
 	head = &Welcome;
