@@ -19,9 +19,6 @@ list_t *add_node_location(list_t **head, const char *str, int position)
 		return (NULL);
 
 	temp->str = strdup(str);
-	/*
-	temp->len = 25;
-	*/
 
 	new = *head;
 	for (i = 0; i < position; i++)
