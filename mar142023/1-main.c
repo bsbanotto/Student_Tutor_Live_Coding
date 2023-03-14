@@ -8,20 +8,20 @@
 int main(void)
 {
 	list_t *head;
-	list_t My = {"My", 25, NULL};
-	list_t favorite = {"favorite", 25, NULL};
-	list_t AXOLOTL = {"AXOLOTL!!", 25, NULL};
+	list_t My = {"My", NULL};
+	list_t animal = {"animal", NULL};
+	list_t AXOLOTL = {"AXOLOTL!!", NULL};
 	size_t n;
 
 	head = &My;
-	head->next = &favorite;
+	head->next = &animal;
 	head->next->next = &AXOLOTL;
 
 	n = print_list(head);
 	printf("\t-> %lu elements\n", n);
 
 /*
-	add_node_location(&head, "animal", 1);
+	add_node_location(&head, "favorite", 0);
 	n = print_list(head);
 	printf("\t-> %lu elements\n", n);
 
